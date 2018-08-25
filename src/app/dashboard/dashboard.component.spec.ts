@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroesComponent } from '../heroes/heroes.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -16,6 +17,7 @@ describe('DashboardComponent', () => {
       imports: [
         AppRoutingModule,
         FormsModule,
+        HttpClientModule,
       ],
       declarations: [
         DashboardComponent,

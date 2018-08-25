@@ -6,6 +6,7 @@ import { DashboardComponent }   from '../dashboard/dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent }  from '../hero-detail/hero-detail.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule }    from '@angular/common/http';
 
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
@@ -16,6 +17,7 @@ describe('HeroesComponent', () => {
       imports: [
           FormsModule,
           AppRoutingModule,
+          HttpClientModule,
       ],
       declarations: [
         HeroesComponent,
