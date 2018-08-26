@@ -7,6 +7,7 @@ import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent }  from '../hero-detail/hero-detail.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule }    from '@angular/common/http';
+import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
@@ -23,6 +24,7 @@ describe('HeroesComponent', () => {
         HeroesComponent,
         DashboardComponent,
         HeroDetailComponent,
+        HeroSearchComponent
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue : '/' }

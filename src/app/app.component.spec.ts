@@ -9,6 +9,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -24,6 +25,7 @@ describe('AppComponent', () => {
         HeroDetailComponent,
         DashboardComponent,
         MessagesComponent,
+        HeroSearchComponent
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue : '/' }
