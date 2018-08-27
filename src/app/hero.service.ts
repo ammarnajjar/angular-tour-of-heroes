@@ -54,7 +54,7 @@ export class HeroService {
 
       return of(result as T);
 
-    }
+    };
   }
 
   updateHero(hero: Hero): Observable<any> {
@@ -63,7 +63,7 @@ export class HeroService {
       catchError(this.handleError<any>(`updateHero`))
       );
   }
-  
+
   addHero(hero: Hero): Observable<Hero> {
     return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
       .pipe(
@@ -73,7 +73,7 @@ export class HeroService {
   }
 
   deleteHero(hero: Hero): Observable<Hero> {
-    const id = typeof hero === 'number' ? hero: hero.id;
+    const id = typeof hero === 'number' ? hero : hero.id;
     const url = `${this.heroesUrl}/${id}`;
 
     return this.http.delete<Hero>(url, httpOptions)
