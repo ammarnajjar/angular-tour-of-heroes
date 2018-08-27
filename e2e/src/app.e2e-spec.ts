@@ -95,8 +95,9 @@ describe('Tutorial part 5', () => {
     it(`updates hero name (${newHeroName}) in details view`, updateHeroNameInDetailView);
 
     it(`saves and shows ${newHeroName} in Dashboard`, () => {
-      element(by.buttonText('go back')).click();
+      element(by.buttonText('save')).click();
       let targetHeroElt = getPageElts().topHeroes.get(targetHeroDashboardIndex);
+      browser.waitForAngular();
       expect(targetHeroElt.getText()).toEqual(newHeroName);
     });
 
@@ -126,8 +127,9 @@ describe('Tutorial part 5', () => {
     it(`updates hero name (${newHeroName}) in details view`, updateHeroNameInDetailView);
 
     it(`shows ${newHeroName} in Heroes list`, () => {
-      element(by.buttonText('go back')).click();
+      element(by.buttonText('save')).click();
       let expectedText = `${targetHero.id} ${newHeroName}`;
+      browser.waitForAngular();
       expect(getHeroLiEltById(targetHero.id).getText()).toEqual(expectedText);
     });
 
