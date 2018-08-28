@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes.svg?branch=master)](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes)
+[![Build Status](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes.svg?branch=master)](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes) 
+[![Web App](https://png.icons8.com/color/50/000000/heroku.png)](https://angular-demon.herokuapp.com)
 
 # AngularTourOfHeroes
 
@@ -18,7 +19,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).  
+Run `ng test:headless` to execute the unit tests in headless mode.
 
 ## Running end-to-end tests
 
