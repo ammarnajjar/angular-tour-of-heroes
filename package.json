@@ -5,12 +5,18 @@
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "start": "ng serve",
+    "serve": "ng serve",
+    "start": "node server.js",
     "test": "ng test",
     "test:headless": "ng test --watch false --progress false --browsers ChromeHeadless",
     "build": "ng build --prod",
     "e2e": "ng e2e",
-    "ng": "ng"
+    "ng": "ng",
+    "postinstall": "ng build --aot --prod"
+  },
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.4.0"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +35,10 @@
     "angular-in-memory-web-api": "^0.6.1",
     "codelyzer": "^4.4.4",
     "core-js": "^2.5.4",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
     "rxjs": "^6.0.0",
+    "typescript": "2.7.2",
     "zone.js": "^0.8.24"
   },
   "devDependencies": {
@@ -40,6 +49,7 @@
     "@types/jasmine": "~2.8.0",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^6.0.45",
+    "enhanced-resolve": "^4.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
