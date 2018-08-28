@@ -1,0 +1,34 @@
+image: node:latest
+stages:
+  - lint
+  - build
+  - test
+  - e2e
+
+before_script:
+  - npm install
+
+app-lint:
+  stage: lint
+  script:
+    - npm run lint
+
+app-build:
+  stage: build
+  artifacts:
+    paths:
+      - dist/
+  script:
+    - npm run build
+
+unit-tests:
+  image: avatsaev/node-chrome
+  stage: test
+  script:
+    - npm run test:headless
+
+e2e-tests:
+  image: avatsaev/node-chrome
+  stage: e2e
+  script:
+    - xvfb-run npm run e2e
