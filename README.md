@@ -4,7 +4,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/ammarnajjar/angular-tour-of-heroes.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://david-dm.org/ammarnajjar/angular-tour-of-heroes.svg)](https://david-dm.org/ammarnajjar/angular-tour-of-heroes)
 [![devDependency Status](https://david-dm.org/ammarnajjar/angular-tour-of-heroes/dev-status.svg)](https://david-dm.org/ammarnajjar/angular-tour-of-heroes?type=dev)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ammarnajjar/angular-tour-of-heroes/blob/master/LICENSE)
 
 
 # AngularTourOfHeroes
