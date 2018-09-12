@@ -22,13 +22,13 @@ app-build:
     - npm run build
 
 unit-tests:
-  image: avatsaev/node-chrome
+  image: najjarammar/angular-chrome-headless-docker
   stage: test
   script:
     - npm run test:headless
 
 e2e-tests:
-  image: avatsaev/node-chrome
+  image: najjarammar/angular-chrome-headless-docker
   stage: e2e
   script:
     - xvfb-run npm run e2e
