@@ -12,8 +12,12 @@
     "build": "ng build --prod",
     "e2e": "ng e2e",
     "ng": "ng",
+    "precommit-check": "echo \"Starting Precommit\" && npm run lint && npm run test:headless && npm run e2e && exit 0",
     "postinstall": "ng build --aot --prod"
   },
+  "pre-commit": [
+    "precommit-check"
+  ],
   "engines": {
     "node": "10.9.0",
     "npm": "6.4.0"
@@ -60,6 +64,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "lodash": "^4.16.2",
     "phantomjs-prebuilt": "^2.1.7",
+    "pre-commit": "^1.2.2",
     "protractor": "^5.4.0",
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
