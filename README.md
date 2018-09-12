@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes.svg?branch=master)](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes) 
-[![Web App](https://png.icons8.com/color/50/000000/heroku.png)](https://angular-demon.herokuapp.com)
+[![Web App](https://png.icons8.com/color/50/000000/heroku.png)](https://angular-demon.herokuapp.com) [![Greenkeeper badge](https://badges.greenkeeper.io/ammarnajjar/angular-tour-of-heroes.svg)](https://greenkeeper.io/)
 
 # AngularTourOfHeroes
 
