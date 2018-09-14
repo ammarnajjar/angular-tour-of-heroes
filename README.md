@@ -39,7 +39,7 @@ In addition to what is currently (13.09.2018) listed on [angular.io](https://ang
 - Run tests in parallel using [karma-parallel](https://www.npmjs.com/package/karma-parallel)
 - Correct `tslint` warnings and errors
 - Add `pre-commit` hook
-- Add [Travis-CI](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes) build pipeline
+- Add [Travis-CI](https://travis-ci.org/ammarnajjar/angular-tour-of-heroes) build pipelines (Ubuntu & OSX)
 - Add [Heroku](https://angular-demon.herokuapp.com) deployment
 - Add [Greenkeeper](https://greenkeeper.io/) dependencies monitoring
 - Add [david-dm](https://david-dm.org/ammarnajjar/angular-tour-of-heroes) dependencies check

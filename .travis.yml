@@ -1,13 +1,17 @@
 language: node_js
+
+matrix:
+  include:
+    - os: linux
+      dist: bionic
+      sudo: false
+    - os: osx
+
 node_js:
   - "10"
-dist: bionic
-sudo: false
-
 cache:
   directories:
     - node_modules
-
 addons:
   chrome: stable
 
@@ -15,4 +19,4 @@ script:
   - npm run lint
   - npm run test:headless
   - npm run build
-  - xvfb-run npm run e2e
+  - npm run e2e
