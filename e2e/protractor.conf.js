@@ -13,7 +13,12 @@ exports.config = {
     // For Travis CI only
     chromeOptions: {
       binary: process.env.CHROME_BIN,
-      args: ['--no-sandbox']
+      args: [
+          '--headless',
+          '--disable-gpu',
+          '--no-sandbox',
+          '--remote-debugging-port=9222'
+      ]
     }
   },
   directConnect: true,
