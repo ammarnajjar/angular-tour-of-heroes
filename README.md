@@ -39,7 +39,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 In addition to what is currently (13.09.2018) listed on [angular.io](https://angular.io/tutorial) tutorial, I have made the following changes:
 
-- Add `test:headless` script to execute the unit tests in headless mode
+- Add `test:headless` script to execute unit tests in a headless mode
+- Add `test:parallel` script to execute unit tests in a parallel headless mode
 - Run tests in parallel using [karma-parallel](https://www.npmjs.com/package/karma-parallel)
 - Correct `tslint` warnings and errors
 - Add `pre-commit` hook
