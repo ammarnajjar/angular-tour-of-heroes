@@ -8,6 +8,7 @@
     "serve": "ng serve",
     "start": "node server.js",
     "test": "ng test",
+    "test:parallel": "ng test --karma-config src/karma-parallel.conf.js --watch false --progress false --browsers ChromeHeadless",
     "test:headless": "ng test --watch false --progress false --browsers ChromeHeadless",
     "build": "ng build --prod",
     "e2e": "ng e2e",
