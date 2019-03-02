@@ -14,7 +14,7 @@
     "e2e": "ng e2e",
     "ng": "ng",
     "precommit-check": "echo \"Starting Precommit\" && npm run lint && exit 0",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --prod"
   },
   "pre-commit": [
     "precommit-check"
