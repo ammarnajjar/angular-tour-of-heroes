@@ -11,7 +11,8 @@
     "test:parallel": "ng test --karma-config src/karma-parallel.conf.js --watch false --progress false --browsers ChromeHeadless",
     "test:headless": "ng test --watch false --progress false --browsers ChromeHeadless",
     "build": "ng build --prod",
-    "e2e": "ng e2e",
+    "pree2e": "node node_modules/protractor/bin/webdriver-manager update",
+    "e2e": "ng e2e --no-webdriver-update",
     "ng": "ng",
     "precommit-check": "echo \"Starting Precommit\" && npm run lint && exit 0",
     "postinstall": "ng build --prod"
@@ -66,7 +67,7 @@
     "lodash": "^4.17.11",
     "phantomjs-prebuilt": "^2.1.16",
     "pre-commit": "^1.2.2",
-    "protractor": "^6.0.0",
+    "protractor": "^5.4.2",
     "ts-node": "^8.0.3",
     "tslint": "^5.14.0",
     "typescript": "3.2.4"
