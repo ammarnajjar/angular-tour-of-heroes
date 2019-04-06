@@ -40,7 +40,7 @@
     "@angular/upgrade": "^7.2.11",
     "angular-in-memory-web-api": "^0.8.0",
     "codelyzer": "^5.0.0",
-    "core-js": "^2.6.5",
+    "core-js": "^3.0.1",
     "express": "^4.16.4",
     "path": "^0.12.7",
     "rxjs": "^6.4.0",
