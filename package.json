@@ -11,8 +11,7 @@
     "test:parallel": "ng test --karma-config src/karma-parallel.conf.js --watch false --progress false --browsers ChromeHeadless",
     "test:headless": "ng test --watch false --progress false --browsers ChromeHeadless",
     "build": "ng build --prod",
-    "pree2e": "node node_modules/protractor/bin/webdriver-manager update",
-    "e2e": "ng e2e --no-webdriver-update",
+    "e2e": "ng e2e",
     "ng": "ng",
     "precommit-check": "echo \"Starting Precommit\" && npm run lint && exit 0",
     "postinstall": "ng build --prod"
